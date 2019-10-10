@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Connexion</title>
+	<link rel="stylesheet" href="connexion.css">
+</head>
+<body>
+<header>
+<h1>Se connecter</h1>
+</header>
+<main>
+<section class="formulaire">
+<form>
+	<label for="identifiant_connex"><p>Identifiant :</p></label>
+	<input type="text" name="identifiant_connex" id="identifiant_connex" required>
+	<label for="mdp_connex"><p>Mot de passe :</p></label>
+	<input type="password" name="mdp_connex" id="identifiant_connex" required>
+<br><br>
+<input type="submit" value="Se connecter"><br>
+</form>
+<input type="submit" value="Créer un compte" onClick="window.location='inscription.html'"><br>
+<input type="reset"  value="Redéfinir le mot de passe" onClick="window.location='motdepasse.html'">
+</section>
+</main>
+</body>
+</html>
+

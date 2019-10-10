@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Inscription</title>
+	<link rel="stylesheet" href="connexion.css">
+</head>
+<body>
+<header>
+<h1>Créer un compte</h1>
+<h2>(Les champs suivis d'une * sont obligatoires)</h2>
+</header>
+<main>
+<section class="formulaire">
+<form method="get" action="connexion.html">
+
+	<label for="identifiant_insc"><p>Identifiant* (au moins 8 car.) :</p></label>
+	<input type="text" name="identifiant_insc" id="identifiant_insc" minlength="8" required>
+	<label for="mdp_insc"><p>Mot de passe* (au moins 8 car.):</p></label>
+	<input type="password" name="mdp_insc" id="identifiant_insc" minlength="8" required>
+	<label for="mdp_insc"><p>Confirmation du mot de passe* :</p></label>
+	<input type="password" name="mdp_insc" id="identifiant_insc" minlength="8" required>
+	<label for="bday"><p>Date de naissance* :</p></label>
+	<input type="date" name="bday" id="bday" max="2002-12-31">
+	<label for="email_insc"><p>Adresse email* :</p></label>
+	<input type="email" name="email_ins" id="email_insc" required>
+	<label for="sexe"><p>Sexe* :</p></label>
+	<input type="radio" name="sexe" id="sexe" value="Féminin" checked>Féminin
+	<input type="radio" name="sexe" id="sexe" value="Masculin">Masculin
+	<label for="etudes"><p>Niveau d'études* :</p></label>
+	<select name="etudes" id="etudes">
+	<option value="">Veuillez sélectionner dans la liste</option>
+    <option value="nondiplome">Sans diplôme</option>
+    <option value="brevet">Brevet des collèges</option>
+    <option value="capbep">CAP/BEP (autres diplômes techniques)</option>
+    <option value="bac">Bac (général, pro et technologique)</option>
+    <option value="bac2">Bac+2 (BTS ou autre)</option>
+    <option value="bac3">Bac+3/4 (Licence, Maîtrise)</option>
+	<option value="bac5">Bac+5 (Master, écoles d'ingé, écoles d'arts...)</option>
+    <option value="bac7">Bac+7 etc (Doctorat, post-doc, thèse)</option>
+	</select>
+	<label for="tel"><p>Numéro de téléphone :</p></label>
+	<input type="tel" name="tel" id="tel">
+	<label for="presentation"><p>Présentation (max. 350 car.) :</p></label>
+	<input type="text" name="presentation" id="presentation" maxlength="350">
+	<p>Hobbies :</p>
+	<input type="checkbox" name="sport" value="sport" id="sport"><label for="sport">Sport</label>
+	<input type="checkbox" name="musique" value="musique" id="musique"><label for="musique">Musique</label>
+	<input type="checkbox" name="lecture" value="lecture" id="lecture"><label for="lecture">Lecture</label>
+	<input type="checkbox" name="informatique" value="informatique" id="informatique"><label for="informatique">Informatique</label>
+	<input type="checkbox" name="bricolage" value="bricolage" id="bricolage"><label for="bricolage">Bricolage</label>
+	<input type="checkbox" name="cuisine" value="cuisine" id="cuisine"><label for="cuisine">Cuisine</label>
+	<input type="checkbox" name="cinema" value="cinema" id="cinema"><label for="cinema">Cinéma</label>
+	<input type="checkbox" name="jardinage" value="jardinage" id="jardinage"><label for="jardinage">Jardinage</label>	     
+	</select>
+	<br><br>
+<input type="submit" value="Valider">
+</form>
+</section>
+</main>
+</body>
+</html>
+

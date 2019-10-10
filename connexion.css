@@ -1,0 +1,71 @@
+﻿html
+{
+}
+
+body {
+  margin:0;
+  padding:0;
+  display: flex;
+  height:100vh;
+  flex-direction:column;
+	justify-items:center;
+  font-family: 'Gloria Hallelujah', cursive;
+   
+
+  /*fond ecran*/
+  background-image: url("img/background.JPG");
+  background-color:grey;
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  background-size:cover;
+    }
+
+h1
+{
+  color:white;
+  font-size:2.6em; 
+}
+
+header
+{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:start;
+	flex-grow:1;
+}
+
+main
+{
+  display:flex;
+  width:100vw;
+  flex-direction:column;
+  flex-grow:8;
+  align-items:center;
+  align-content:center;
+  text-align: center;
+  justify-content:space-around;
+  justify-items:center;
+ }
+
+ .formulaire
+ {
+   display:flex;
+   flex-direction:column;
+   max-width:30vw;
+   border-radius: 8px;
+   background: rgba(127, 124, 124, 0.8);
+   padding:15px;
+   margin:15px;
+  }
+
+  p
+  {
+  	  font-weight:bold;
+  }
+
+input[type=submit]
+{
+	margin:10px;
+}
+
